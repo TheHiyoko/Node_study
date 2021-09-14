@@ -9,8 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 
-require('./controllers/authController')(app);
-require('./controllers/projectController')(app);
+require('./app/controllers/index')(app);
 
 
 app.listen(3000, ()=>{
